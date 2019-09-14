@@ -23,8 +23,6 @@ wind_main = main.find_all('td',class_='wind')
 
 humi_main = main.find_all('td',class_='humidity')
 
-#This Loop Makes All Items A List
-
 days = [item.get_text() for item in day_main]
 dates = [item.get_text() for item in date_main]
 temp = [item.get_text() for item in temp_main]
@@ -32,34 +30,6 @@ desc = [item.get_text() for item in desc_main]
 rain = [item.get_text() for item in rain_main]
 wind = [item.get_text() for item in wind_main]
 humi = [item.get_text() for item in humi_main]
-
-'''
-#This Loop Makes Each Items A List
-
-for a in day_main:
-	days = [a.get_text()]
-	print (days)
-
-for b in date_main:
-	dates = [b.get_text()]
-	print (dates)
-
-for c in temp_main:
-	temp = [c.get_text()]
-	print(temp)	
-
-for d in desc_main:
-	desc = [d.get_text()]
-	print(desc)	
-
-for e in rain_main:
-	rain = [e.get_text()]
-	print(rain)	
-
-for f in wind_main:
-	wind = [f.get_text()]
-	print(wind)	
-'''
 
 weather_info = pd.DataFrame({
 	'Day':days,
@@ -72,5 +42,3 @@ weather_info = pd.DataFrame({
 	})
 
 print(weather_info)
-
-
