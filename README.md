@@ -9,8 +9,15 @@ Beautiful Soup is a Python library for pulling data out of HTML and XML files.
 pip install beautifulsoup4
 ```
 
-### Installing Beautiful Soup
-Beautiful Soup is a Python library for pulling data out of HTML and XML files.
+### Installing Pandas
+Pandas is the most popular python library that is used for data analysis.
 ```bash
-pip install beautifulsoup4
+pip install pandas
 ```
+
+### Run
+```bash
+python weather_info.py 
+```
+
+## Thank You
